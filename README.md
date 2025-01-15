@@ -33,11 +33,8 @@ project 1 user submitted weather display app
 * technologies used: HTML, CSS, JS, Bootstrap, Web APIs
 
 ## GitHub Deployment
-* (https://pecdao.github.io/Weather-app-Project-1/)
+* ()
 
 ## Link Refrences 
 
 * [Google](https://www.google.com), [Youtube](https://www.youtube.com), [W3schools](https://www.w3schools.com), [Open-Meteo](https://open-meteo.com), [Freepik](https://www.freepik.com/search?format=search&iconType=standard&last_filter=query&last_value=freezing+drizzle&query=freezing+drizzle&type=icon);
-
-
-* [PresentationLink] (https://docs.google.com/presentation/d/1-c-YtBZOWypVUp8XmGy6YzfM66X9GwEbqT6pwqMckVE/edit#slide=id.g320332ed93_1_0);
