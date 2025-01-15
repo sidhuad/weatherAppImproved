@@ -1,0 +1,290 @@
+body, h1, form, section {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* margin: 20px 320px;
+    align-items: center;
+    padding: 20px; */
+    border-radius: 8px;
+    border: 2px transparent black;
+    background-image: url(https://theautarkist.wordpress.com/wp-content/uploads/2021/10/dune-film-ulyces-100.jpg);
+    background-position-x: center;
+    background-position-y: 870px;
+    /* color:#f4f4f9;
+    background-image: url(Sunny\ clouds\ background.png)!important; */
+}
+
+/* .header.container.my-5.p-5.bg-dark.text-white {
+    background-color: #ff0000;
+} */
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    font-family: 'dune rise', sans-serif;
+}
+
+.main {
+    margin-top: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.surfacemag.com/app/uploads/2021/10/26180457/dune-2021-remake-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    min-height: 100vh;
+    /* width: 100vw; */
+    color: #d49962;
+}
+
+
+form {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#locationName {
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* .d-flex.flex-row.flex-wrap.justify-content-center.mt-5.col-sm-12 {
+    border: 1px solid black;
+} */
+
+.card {
+    /* border: 2px solid black !important; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px grey !important;
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+}
+
+/* .card col-sm-12 col-12 col-md-6 col-lg-3 col-xl-3 mx-1 my-1 {
+    border: 1px solid black;
+    border-bottom-color: black 2px !important;
+} */
+
+.card h1 {
+    font-family: 'dune rise', sans-serif; 
+    font-size: 24px;
+    
+}
+
+.footer {
+    margin-top: 3rem;
+    width: 67%;
+    padding: .5rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    /* position: fixed; */
+    margin: 0 auto;
+    left: 16.5%;
+    bottom: 0;
+}
+
+.card
+{
+    /* height: 300px ; */
+    text-align: center;
+    background: linear-gradient( rgba(73, 174, 241, 0.70),rgb(223, 147, 47));
+    border: none;
+    cursor: pointer;
+    min-height: 200px;
+    margin-bottom: 10rem;
+ 
+}
+.card *
+{
+    line-height: 60px ;
+}
+/* .errorDisplay
+{
+   font-size: 2.5rem;
+   font-weight: bold;
+   color: red;
+} */
+
+@media (max-width: 768px) {
+    .header {
+        width: 95%; /* Adjust width for tablets */
+        margin: 10px auto;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .card {
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 100%; /* Adjust width for phones */
+        margin: 5px auto;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .card {
+        line-height: 30px;
+    }
+}
+
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-mode {
+    --background-color: black;
+    --text-color: white;
+}
+
+.toggleCovering
+{
+    /* height: 34px;
+    width: 61px;
+    border-radius: 20px;
+    content: "";
+    background-color: rgb(110, 193, 241);
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: bottom;
+    top: 100px;
+    box-shadow: 0px 0px 34px 2px  rgb(110, 193, 241); */
+    display: inline-block;
+    position: relative;
+    top: 22.5px;
+    margin-left: 14px;
+}
+.toggleInsideLight
+{
+    content: "";
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(104, 95, 95, 0.555);
+    border-radius: 50%;
+    /* top: 5.5px; */
+    /* left: 2px; */
+    /* transform: translate(3px); */
+    /* transition: transform 0.2s linear; */
+    background-image:url("./assets/sunnyDay.png");
+    background-size: cover;
+}
+.toggleInsideDark
+{
+    content: "";
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(16, 2, 104, 0.555);
+    border-radius: 50%;
+    /* top: 5.5px; */
+    /* left: 2px; */
+    /* transform: translateX(33px); */
+    /* transition: transform 0.2s linear; */
+    background-image:url("./assets/night.png");
+    background-size: cover;
+}
+.partCloudy
+{
+    background-image: url(./assets/partCloudy.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.snow
+{
+    background-image: url(./assets/snow.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+.clearSky
+{
+    background-image: url(./assets/clear_sky.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+.fog
+{
+    background-image: url(./assets/fog.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+.drizzle
+{
+    background-image: url(./assets/drizzle.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+.freezDrizzle
+{
+    background-image: url(./assets/freezing_drizzle.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+.rain
+{
+    background-image: url(./assets/rain.png);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
